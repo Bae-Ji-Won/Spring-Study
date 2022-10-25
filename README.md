@@ -14,7 +14,7 @@
 
 # ⚙️ 기술 스택
 <div>
-  <img alt="Spring" src ="https://img.shields.io/badge/Spring-#6DB33F.svg?&style=for-the-badge&logo=Java&logoColor=white"/>
+  <img alt="Spring" src ="https://img.shields.io/badge/Spring-6DB33F.svg?&style=for-the-badge&logo=Spring&logoColor=white"/>
 </div>
 
 <br />
