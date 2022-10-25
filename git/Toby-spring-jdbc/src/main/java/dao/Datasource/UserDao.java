@@ -1,6 +1,8 @@
 package dao.Datasource;
 
 
+import dao.JdbcTemplate.JdbcContext;
+import dao.JdbcTemplate.StatementStrategy;
 import domain.User;
 
 import javax.sql.DataSource;
@@ -14,7 +16,7 @@ public class UserDao {
 
     private final DataSource dataSource;  // Connection -> DataSource 사용
 
-    private final JdbcContext jdbcContext;
+    private final dao.JdbcTemplate.JdbcContext jdbcContext;
 
     public UserDao(DataSource dataSource) {
         this.dataSource = dataSource;
@@ -26,7 +28,6 @@ public class UserDao {
 
 
     public void add(final User user) throws SQLException {
-
         // AddStrategy 클래스를 따로 안만들고 여기서 처리
         this.jdbcContext.workWithStatementstrategy(new StatementStrategy() {
             @Override
@@ -83,19 +84,14 @@ public class UserDao {
 
     }
 
+
     public void deleteAll() throws SQLException{
-        // DeleteStrategy 클래스를 따로 안만들고 여기서 처리
-        this.jdbcContext.workWithStatementstrategy(new StatementStrategy() {
-            @Override
-            public PreparedStatement makepreparedStatement(Connection connection) throws SQLException {
-                return connection.prepareStatement("delete  from users");
-            }
-        });
-        /* jdcbContextWithStatementstrategy(stmt); 인데 여기서 stmt에는 delete에 해당하는 쿼리문이 들어가야 하므로
-           원래는 따로 Strategy클래스에서 만들거나 현재 메서드에서 선언을 할 수 있는데 코드를 줄이기 위해
-           참조변수자리에 바로 new를 통해 객체를 생성하고 추가한다.
-           
-           이것을 익명의 내부클래스라고 함
+        this.jdbcContext.executeSql("delete from users");   // 쿼리만 넘겨줌
+        /*
+        Template Callback 적용
+        .executeSql() : SQL 쿼리문을 받아서 PrteparedStatement를 만든 후 실행하는 기능
+        (add와 중복 코드로 인하여 SQL 쿼리문만 입력하여 사용할수 있도록 함)
+        이때 executeSql은 종속성이 없으므로 Jdbc 파일로 보내서 사용
          */
     }
 
@@ -128,3 +124,4 @@ public class UserDao {
     }
 
 }
+
