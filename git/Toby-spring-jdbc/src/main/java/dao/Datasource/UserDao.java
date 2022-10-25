@@ -12,13 +12,13 @@ import java.sql.SQLException;
 // 중복코드만 따로 빼내서 작성한 코드 (첫번째 방식)
 public class UserDao {
 
-    private DataSource dataSource;  // Connection -> DataSource 사용
+    private final DataSource dataSource;  // Connection -> DataSource 사용
 
-    private JdbcContext jdbcContext;
+    private final JdbcContext jdbcContext;
 
     public UserDao(DataSource dataSource) {
         this.dataSource = dataSource;
-        this.jdbcContext = new JdbcContext(dataSource);
+        this.jdbcContext = new JdbcContext(dataSource); // 구체적인 클래스 이름이 들어가는 구간
     }
 
 
