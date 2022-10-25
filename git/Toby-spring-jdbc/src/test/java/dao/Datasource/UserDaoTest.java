@@ -18,7 +18,7 @@ import java.sql.SQLException;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = dao.Strategy.UserFactory.class)
+@ContextConfiguration(classes = UserFactory.class)
 class UserDaoTest {
 
     @Autowired
