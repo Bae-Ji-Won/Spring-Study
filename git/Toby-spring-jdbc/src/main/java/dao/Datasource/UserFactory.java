@@ -22,8 +22,9 @@ public class UserFactory {
         return userDao;
     }
 
-    // 현재 클래스에서만 사용할거기 때문에 Bean은 안붙여줘도 됨
+    // 현재 클래스에서만 사용할거기 때문에 Bean은 붙여도 되고 안붙여도 됨 하지만, 다른 클래스에서 사용시 붙여야함
     // ConnectionMaker를 따로 빼지 않고 Bean폴더 안에서 DataSource를 통해 한번에 작업함
+
     public DataSource awsDataSource(){
         Map<String,String> env = System.getenv();
         SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
