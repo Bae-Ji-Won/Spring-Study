@@ -2,7 +2,7 @@ package dao.Datasource;
 
 
 
-import dao.JdbcTemplate.UserDao;
+import dao.Datasource.UserDao;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
@@ -16,9 +16,9 @@ import java.util.Map;
 public class UserFactory {
 
     @Bean           // aws 설정값을 반환해줌
-    public dao.JdbcTemplate.UserDao awsConnection(){
-        dao.JdbcTemplate.UserFactory uf = new dao.JdbcTemplate.UserFactory();
-        dao.JdbcTemplate.UserDao userDao = new UserDao(uf.awsDataSource());
+    public UserDao awsConnection(){
+        UserFactory uf = new UserFactory();
+        UserDao userDao = new UserDao(uf.awsDataSource());
 
         return userDao;
     }
