@@ -1,7 +1,6 @@
 package dao.Datasource;
 
-import dao.JdbcTemplate.StatementStrategy;
-
+import dao.Datasource.StatementStrategy;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,7 +16,7 @@ public class JdbcContext {
     }
 
     public void executeSql(String sql) throws SQLException{
-        this.workWithStatementstrategy(new dao.JdbcTemplate.StatementStrategy() {
+        this.workWithStatementstrategy(new StatementStrategy() {
             @Override
             public PreparedStatement makepreparedStatement(Connection connection) throws SQLException {
                 return connection.prepareStatement(sql);
