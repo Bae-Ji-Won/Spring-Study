@@ -1,8 +1,10 @@
 package dao.Datasource;
 
 
-import dao.JdbcTemplate.JdbcContext;
-import dao.JdbcTemplate.StatementStrategy;
+
+
+import dao.Datasource.JdbcContext;
+import dao.Datasource.StatementStrategy;
 import domain.User;
 
 import javax.sql.DataSource;
@@ -13,12 +15,12 @@ import java.sql.SQLException;
 
 // 중복코드만 따로 빼내서 작성한 코드 (첫번째 방식)
 
-// .executeQuery() 분리  Template CallBack 사용까지
+// .executeQuery() 분리  template CallBack 사용까지
 public class UserDao {
 
     private final DataSource dataSource;  // Connection -> DataSource 사용
 
-    private final dao.JdbcTemplate.JdbcContext jdbcContext;
+    private final JdbcContext jdbcContext;
 
     public UserDao(DataSource dataSource) {
         this.dataSource = dataSource;
