@@ -12,6 +12,7 @@
 - 2022-10-25 : Java/Mysql 연결(Interface, Factory(bean), Strategy, Jdbc, DataSource, 익명클래스 ...) 지금까지 내용 복습
 <br />
 
+- 2022-10-26 : Spring boot 시작
 # ⚙️ 기술 스택
 <div>
   <img alt="Java" src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/>
