@@ -13,6 +13,8 @@
 <br />
 
 - 2022-10-26 : Spring boot 시작
+Spring boot는 다른 저장소 사용 : https://github.com/Bae-Ji-Won/SpringBoot-Study
+
 # ⚙️ 기술 스택
 <div>
   <img alt="Java" src ="https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white"/>
