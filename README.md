@@ -25,26 +25,32 @@ Spring boot는 다른 저장소 사용 : https://github.com/Bae-Ji-Won/SpringBoo
 <br />
 
 ## ☁️ Spring DI - JdbcTemplate 설계 과정 
-### ➀ Spring Start
-- Connection / ConnectionMaker / Factory File<br>
+### 1️⃣ Spring Start
+- File <br>
+Connection / ConnectionMaker / Factory <br><br>
 📗 정리 블로그<br>
 https://velog.io/@qowl880/Spring-Spring%EC%97%90%EC%84%9C-Query%EB%AC%B8-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%811
 #### &nbsp;&nbsp; 
 
-### ➁ Spring Start<br>
-https://velog.io/@qowl880/Spring-Spring%EC%97%90%EC%84%9C-Query%EB%AC%B8-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%811
+### 2️⃣ Spring Stragetegy
+- File<br>
+Stragetegy <br><br>
+📗 정리 블로그<br>
+https://velog.io/@qowl880/Spring-Spring%EC%97%90%EC%84%9C-Query%EB%AC%B8-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%812
 #### &nbsp;&nbsp; 
 
-### ➀ 
-
+### 3️⃣ Spring DataSource
+- File<br>
+Datasource <br><br>
+📗 정리 블로그<br>
+https://velog.io/@qowl880/Spring-Spring%EC%97%90%EC%84%9C-Query%EB%AC%B8-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%813
 #### &nbsp;&nbsp; 
 
-### ➀ 
-
-#### &nbsp;&nbsp; 
-
-### ➀ 
-
+### 4️⃣ Spring JdbcTemplate
+- File<br>
+JdbcTemplate <br><br>
+📗 정리 블로그<br>
+https://velog.io/@qowl880/Spring-Spring%EC%97%90%EC%84%9C-Query%EB%AC%B8-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%814
 #### &nbsp;&nbsp; 
 
 
