@@ -25,8 +25,9 @@ Spring boot는 다른 저장소 사용 : https://github.com/Bae-Ji-Won/SpringBoo
 <br />
 
 ## ☁️ Spring DI - JdbcTemplate 설계 과정 
-### ➀ Spring Start<br>
-📗 정리 블로그
+### ➀ Spring Start
+- Connection / ConnectionMaker / Factory File<br>
+📗 정리 블로그<br>
 https://velog.io/@qowl880/Spring-Spring%EC%97%90%EC%84%9C-Query%EB%AC%B8-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%811
 #### &nbsp;&nbsp; 
 
