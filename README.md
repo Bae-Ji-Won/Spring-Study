@@ -1,6 +1,9 @@
 ### 🦁 멋쟁이사자처럼 백엔드
 
 # 🗓 공부 일정
+
+📄 실습 정리 블로그 : https://velog.io/@qowl880/series/%EC%9E%90%EB%B0%94-%EC%8B%A4%EC%8A%B5
+
 - 2022-10-19 : Java/Mysql 연결(리팩토링 : Interface, Factory 분리) + spring 연동
 
 - 2022-10-20 : Spring bean 설정 + 예외 처리 + Spring TDD
